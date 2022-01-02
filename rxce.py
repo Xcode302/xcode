@@ -128,48 +128,6 @@ def hero():
   
 
 
-
-if(expirydate>today):
-    now = datetime.datetime.now()
-    First = now.replace(hour=11, minute=55, second=0, microsecond=0)
-    Firstend = now.replace(hour=12, minute=18, second=0, microsecond=0)
-    Second = now.replace(hour=15, minute=55, second=0, microsecond=0)
-    Secondend = now.replace(hour=16, minute=18, second=0, microsecond=0)
-    Third = now.replace(hour=18, minute=55, second=0, microsecond=0)
-    Thirdend = now.replace(hour=19, minute=18, second=0, microsecond=0)
-    Final = now.replace(hour=20, minute=55, second=0, microsecond=0)
-    Finalend = now.replace(hour=21, minute=18, second=0, microsecond= 0)
-    FFinal = now.replace(hour=22, minute=55, second=0, microsecond= 0)
-    FFinalend = now.replace(hour=23, minute=18, second=0, microsecond= 0)
-
-    if (now>First and now<Firstend):
-            period=240
-            hero()
-    elif(now>Second and now<Secondend):
-            period=320
-            hero()
-    elif(now>Third and now<Thirdend):
-            period=380
-            hero()
-    elif(now>Final and now<Finalend):
-            period=420
-            hero()
-    elif(now>FFinal and now<FFinalend):
-            period=460
-            hero()
-    else:
-        banner='figlet Rxce 7.o '
-        print("Hi!! Thanks for buying the hack")
-        print("----------Your play time-----------")
-        print(" 12:00 PM- 12:15 PM")
-        print(" 04:00 PM- 04:15 PM")
-        print(" 07:00 PM- 07:15 PM")
-        print(" 09:00 PM- 09:15 PM")
-        print(" 11:00 PM- 12:15 PM")
-        print("Please play on the given time, and ")
-        print("If you think it is an error contact")
-        print(" admin on telegram @ethical_expert007 ")
-else:
     banner='figlet Thank '
     system(banner)
     print("*---------*----------*-------------*----------*")
