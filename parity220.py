@@ -10,11 +10,10 @@ import datetime
 from base64 import b64decode,b64encode
 from datetime import date
 
-expirydate = datetime.date(2022,  1, 12 )
-#expirydate = datetime.date(2021, 12, 30)
+ = datetime.date(2022, 9, 15)
+#expirydate = datetime.date(2022, 12, 30)
 today=date.today()
 def hero():
-
     def chalo():
         done = False
         #here is the animation
@@ -22,18 +21,15 @@ def hero():
             for c in itertools.cycle(['|', '/', '-', '\\']) :
                 if done:
                     break
-                sys.stdout.write('\rconnecting to server for next colour--------- ' + c)
+                sys.stdout.write('\rhacking in the parity server for next colour--------- ' + c)
                 sys.stdout.flush()
                 time.sleep(0.1)
             sys.stdout.write('\rDone!     ')
-
         t = threading.Thread(target=animate)
         t.start()
-
         #long process here
         time.sleep(20)
         done = True
-
     def chalo1():
         done = False
         #here is the animation
@@ -45,14 +41,27 @@ def hero():
                 sys.stdout.flush()
                 time.sleep(0.1)
             sys.stdout.write('\rDone!     ')
-
         t = threading.Thread(target=animate)
         t.start()
-
         #long process here
         time.sleep(20)
         done = True
-
+    def chalo1():
+        done = False
+        #here is the animation
+        def animate():
+            for c in itertools.cycle(['|', '/', '-', '\\']):
+                if done:
+                    break
+                sys.stdout.write('\rgetting the colour wait --------- ' + c)
+                sys.stdout.flush()
+                time.sleep(0.1)
+            sys.stdout.write('\rDone!     ')
+        t = threading.Thread(target=animate)
+        t.start()
+        #long process here
+        time.sleep(20)
+        done = True
     def clear():
         # for windows
         if name == 'nt':
@@ -60,24 +69,22 @@ def hero():
         # for mac and linux(here, os.name is 'posix')
         else:
             _ = system('clear')
-
     clear()
     y=1
     newperiod=period
-    banner='figlet RXCE 7.o'
+    banner='figlet RXCE'
     thisway=[2,6,8,11,12,15,16,18,19,20]
     thatway=[1,3,4,5,7,9,10,14,13,17]
     numbers=[]
     i=1
-    while(y):
+   while(y):
         clear()
         system(banner)
-        print("Contact me on telegram @Hackmgk")
-        print("Enter" ,newperiod,"Price :")
+        print("Enter ",newperiod," Parity Price :")
         current=input()
         current=int(current)
         chalo()
-        print("\n---------Successfully Connected to the server-----------")
+        print("\n---------Successfully hacked the server-----------")
         chalo1()
         print("\n---------Successfully got the colour -------------")
         print('\n')
@@ -91,40 +98,40 @@ def hero():
             n=int(current)%10
             if((m%2==0 and n%2==0) or (m%2==1 and n%2==1)):
                 if current in numbers:
-                    print(newperiod+1," : 💥🔴RED1🔴💥")
+                    print(newperiod+1," : RED")
                 else:
-                    print(newperiod+1," : 💥🟢GREEN1🟢💥")
+                    print(newperiod+1," : GREEN")
             else:
                 if current in numbers:
-                    print(newperiod+1," :  💥🔴RED2🔴💥")
+                    print(newperiod+1," : GREEN")
                 else:
-                    print(newperiod+1," : 💥🔴RED3🔴💥")
+                    print(newperiod+1," : RED")
         if i in thatway:
             m=getSum(current)+1
             n=int(current)%10
             if((m%2==0 and n%2==0) or (m%2==1 and n%2==1)):
                 if current in numbers:
-                    print(newperiod+1,": 💥💥🟢GREEN2🟢💥💥")
+                    print(newperiod+1,": RED")
                 else:
-                    print(newperiod+1,": 💥💥🟢GREEN3🟢💥💥")
+                    print(newperiod+1,": GREEN")
             else:
                 if current in numbers:
-                    print(newperiod+1,": 💥💥🔴RED4🔴💥💥")
+                    print(newperiod+1,": GREEN")
                 else:
-                    print(newperiod+1,": 💥💥🟢GREEN4🟢💥💥")
+                    print(newperiod+1,": RED")
         i=i+1
-        newperiod+=1
+       newperiod+=1
         numbers.append(current)
         y=input("Do you want to play : Press 1 and 0 to exit \n")
         if(y==0):
             y=False
-        if (len(numbers)>15):
+        if (len(numbers)>11):
             clear()
             system('figlet Thank you!!')
             print("Play on next specified time!!")
             print("-----------Current Time UP----------")
-            sys.exit(" \n \n \n Contact on Telegram @Hackmgk")
-            print(numbers)
+            sys.exit(" \n \n \n
+            #print(numbers)
   
 
 
