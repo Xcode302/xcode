@@ -10,10 +10,11 @@ import datetime
 from base64 import b64decode,b64encode
 from datetime import date
 
- expirydate = datetime.date(2022,  1, 12 )
+expirydate = datetime.date(2022,  1, 13 )
 #expirydate = datetime.date(2021, 12, 30)
 today=date.today()
 def hero():
+
     def chalo():
         done = False
         #here is the animation
@@ -21,15 +22,18 @@ def hero():
             for c in itertools.cycle(['|', '/', '-', '\\']) :
                 if done:
                     break
-                sys.stdout.write('\rhacking in the parity server for next colour--------- ' + c)
+                sys.stdout.write('\rconnecting to server for next colour--------- ' + c)
                 sys.stdout.flush()
                 time.sleep(0.1)
             sys.stdout.write('\rDone!     ')
+
         t = threading.Thread(target=animate)
         t.start()
+
         #long process here
         time.sleep(20)
         done = True
+
     def chalo1():
         done = False
         #here is the animation
@@ -41,27 +45,14 @@ def hero():
                 sys.stdout.flush()
                 time.sleep(0.1)
             sys.stdout.write('\rDone!     ')
+
         t = threading.Thread(target=animate)
         t.start()
+
         #long process here
         time.sleep(20)
         done = True
-    def chalo1():
-        done = False
-        #here is the animation
-        def animate():
-            for c in itertools.cycle(['|', '/', '-', '\\']):
-                if done:
-                    break
-                sys.stdout.write('\rgetting the colour wait --------- ' + c)
-                sys.stdout.flush()
-                time.sleep(0.1)
-            sys.stdout.write('\rDone!     ')
-        t = threading.Thread(target=animate)
-        t.start()
-        #long process here
-        time.sleep(20)
-        done = True
+
     def clear():
         # for windows
         if name == 'nt':
@@ -69,22 +60,24 @@ def hero():
         # for mac and linux(here, os.name is 'posix')
         else:
             _ = system('clear')
+
     clear()
     y=1
     newperiod=period
-    banner='figlet RXCE'
-    thisway=[2,6,8,11,12,15,16,18,19,20]
-    thatway=[1,3,4,5,7,9,10,14,13,17]
+    banner='figlet Rxce 7.o '
+    thisway=[0,2,4,6,8,10,12,14,16,18,20]
+    thatway=[1,3,5,7,9,11,13,15,17,19]
     numbers=[]
     i=1
-   while(y):
+    while(y):
         clear()
         system(banner)
-        print("Enter ",newperiod," Parity Price :")
+        print("Contact me on telegram @Hackmgk")
+        print("Enter" ,newperiod,"Price :")
         current=input()
         current=int(current)
         chalo()
-        print("\n---------Successfully hacked the server-----------")
+        print("\n---------Successfully Connected to the server-----------")
         chalo1()
         print("\n---------Successfully got the colour -------------")
         print('\n')
@@ -98,74 +91,76 @@ def hero():
             n=int(current)%10
             if((m%2==0 and n%2==0) or (m%2==1 and n%2==1)):
                 if current in numbers:
-                    print(newperiod+1," : RED")
+                    print(newperiod+1," : 💥🟢GREEN1🟢💥")
                 else:
-                    print(newperiod+1," : GREEN")
+                    print(newperiod+1," : 💥🔴RED2🔴💥")
             else:
                 if current in numbers:
-                    print(newperiod+1," : GREEN")
+                    print(newperiod+1," :  💥🔴RED3🔴💥")
                 else:
-                    print(newperiod+1," : RED")
+                    print(newperiod+1," : 💥🟢GREEN4🟢💥")
         if i in thatway:
             m=getSum(current)+1
             n=int(current)%10
             if((m%2==0 and n%2==0) or (m%2==1 and n%2==1)):
                 if current in numbers:
-                    print(newperiod+1,": RED")
+                    print(newperiod+1,": 💥💥🔴RED5🔴💥💥")
                 else:
-                    print(newperiod+1,": GREEN")
+                    print(newperiod+1,": 💥💥🔴RED6🔴💥💥")
             else:
                 if current in numbers:
-                    print(newperiod+1,": GREEN")
+                    print(newperiod+1,": 💥💥🟢GREEN6🟢💥💥")
                 else:
-                    print(newperiod+1,": RED")
+                    print(newperiod+1,": 💥💥🔴RED7🔴💥💥")
         i=i+1
-       newperiod+=1
+        newperiod+=1
         numbers.append(current)
         y=input("Do you want to play : Press 1 and 0 to exit \n")
         if(y==0):
             y=False
-        if (len(numbers)>11):
+        if (len(numbers)>15):
             clear()
             system('figlet Thank you!!')
             print("Play on next specified time!!")
             print("-----------Current Time UP----------")
-            sys.exit(" \n \n \n
-            #print(numbers)
-  
-
-
-
+            sys.exit(" \n \n \n Contact on Telegram @Hackmgk")
+            print(numbers)
+            
+            
+            
+            
+            
+            
 if(expirydate>today):
     now = datetime.datetime.now()
-    First = now.replace(hour=8, minute=11, second=0, microsecond=0)
-    Firstend = now.replace(hour=23, minute=35, second=0, microsecond=0)
+    First = now.replace(hour=1, minute=55, second=0, microsecond=0)
+    Firstend = now.replace(hour=23, minute=18, second=0, microsecond=0)
     
-
+    
     if (now>First and now<Firstend):
-            period=387
+            period=240
             hero()
     
     else:
         banner='figlet Rxce 7.o '
-        print("Hi!! Thanks for buying Life time the hack")
+        print("Hi!! Thanks for buying the hack")
         print("----------Your play time-----------")
-        print(" 10:00 PM- 10:35 PM")
-        print(" 12:00 PM- 12:35 PM")
-        print(" 03:00 PM- 03:35 PM")
-        print(" 08:00 PM- 08:35 PM")
-        print(" 11:00 PM- 12:35 PM")
+        print(" 12:00 PM- 12:15 PM")
+        print(" 04:00 PM- 04:15 PM")
+        print(" 07:00 PM- 07:15 PM")
+        print(" 09:00 PM- 09:15 PM")
+        print(" 11:00 PM- 12:15 PM")
         print("Please play on the given time, and ")
         print("If you think it is an error contact")
-        print(" admin on telegram @Hackmgk ")
+        print(" admin on telegram @ethical_expert007 ")
 else:
     banner='figlet Thank '
     system(banner)
     print("*---------*----------*-------------*----------*")
     print("Your hack has expired--- Please contact")
-    print(" on telegram ----@hackmgk for activating")
+    print(" on telegram ----@ethical_expert007 for activating")
     print(" Recharge Amount :        Total limit " )
     print(" 2.     3000 INR -------  30 Days")
     print("*---------*----------*-------------*----------*")
     print("Your custom hack can be made request from us.")
-    print( "Msg me on telegram @hackmgk")
+    print( "Msg me on telegram @ethical_expert007"
