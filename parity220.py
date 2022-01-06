@@ -135,7 +135,7 @@ if(expirydate>today):
     Firstend = now.replace(hour=23, minute=35, second=0, microsecond=0)
     
     if (now>First and now<Firstend):
-            period=226
+            period=297
             hero()
     
     else:
