@@ -64,16 +64,16 @@ def hero():
     clear()
     y=1
     newperiod=period
-    banner='figlet Rxce 7.o '
-    thisway=[0,2,4,6,8,10,12,14,16,18,20]
-    thatway=[1,3,5,7,9,11,13,15,17,19]
+    banner='figlet RXCE V 2.0'
+    thisway=[2,2,6,6,8,8,11,11,12,12,15,15,16,16,18,18,19,19,20,20]
+    thatway=[1,1,3,3,4,4,5,5,7,7,9,9,10,10,14,14,13,13,17,17]
     numbers=[]
     i=1
     while(y):
         clear()
         system(banner)
-        print("Contact me on telegram @Hackmgk")
-        print("Enter" ,newperiod,"Price :")
+        print("Contact me on telegram @rxcehack143")
+        print("Enter ",newperiod," Parity Price :")
         current=input()
         current=int(current)
         chalo()
@@ -91,39 +91,39 @@ def hero():
             n=int(current)%10
             if((m%2==0 and n%2==0) or (m%2==1 and n%2==1)):
                 if current in numbers:
-                    print(newperiod+1," : 💥🟢GREEN1🟢💥")
+                    print(newperiod+1," : RED")
                 else:
-                    print(newperiod+1," : 💥🔴RED2🔴💥")
+                    print(newperiod+1," : GREEN")
             else:
                 if current in numbers:
-                    print(newperiod+1," :  💥🔴RED3🔴💥")
+                    print(newperiod+1," : GREEN")
                 else:
-                    print(newperiod+1," : 💥🟢GREEN4🟢💥")
+                    print(newperiod+1," : RED")
         if i in thatway:
             m=getSum(current)+1
             n=int(current)%10
             if((m%2==0 and n%2==0) or (m%2==1 and n%2==1)):
                 if current in numbers:
-                    print(newperiod+1,": 💥💥🔴RED5🔴💥💥")
+                    print(newperiod+1,": RED")
                 else:
-                    print(newperiod+1,": 💥💥🔴RED6🔴💥💥")
+                    print(newperiod+1,": GREEN")
             else:
                 if current in numbers:
-                    print(newperiod+1,": 💥💥🟢GREEN6🟢💥💥")
+                    print(newperiod+1,": GREEN")
                 else:
-                    print(newperiod+1,": 💥💥🔴RED7🔴💥💥")
+                    print(newperiod+1,": RED")
         i=i+1
         newperiod+=1
         numbers.append(current)
         y=input("Do you want to play : Press 1 and 0 to exit \n")
         if(y==0):
             y=False
-        if (len(numbers)>15):
+        if (len(numbers)>11):
             clear()
             system('figlet Thank you!!')
             print("Play on next specified time!!")
             print("-----------Current Time UP----------")
-            sys.exit(" \n \n \n Contact on Telegram @Hackmgk")
+            sys.exit(" \n \n \n Contact on Telegram @rxcehack143")
             print(numbers)
             
             
